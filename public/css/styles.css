@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
 
+body {
+  font-family: sans-serif; }
+
 #app {
   display: flex;
   flex-direction: column;
@@ -8,9 +11,17 @@
   justify-content: center; }
 
 .question-group {
-  margin-top: 1em; }
+  margin-top: 1em;
+  background-color: #EEE;
+  padding: 1em;
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 1em; }
   .question-group input {
-    display: block; }
+    font-size: 0.8em;
+    height: 30px;
+    width: 350px;
+    display: block;
+    margin-bottom: 1em; }
 
 .flash-card {
   margin-bottom: 1em;

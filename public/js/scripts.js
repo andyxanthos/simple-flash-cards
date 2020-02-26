@@ -2,6 +2,10 @@ const app = document.getElementById('app');
 const addQuestionBtn = document.getElementById('add-question-btn');
 const questionForm = document.getElementById('question-form');
 
+if (localStorage.getItem('questions')) {
+    renderCards();
+}
+
 addQuestionBtn.addEventListener('click', function() {
     // Count the number of question-group elements
     // Add one for use in the current element
@@ -197,6 +201,7 @@ function renderForm() {
 
     let submitBtn = document.createElement('input');
     submitBtn.type = 'submit';
+    submitBtn.classList.add('create-btn');
     submitBtn.value = 'Create Flash Cards';
     qForm.appendChild(submitBtn);
 
