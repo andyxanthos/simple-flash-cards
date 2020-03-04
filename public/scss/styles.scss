@@ -10,12 +10,14 @@ body {
 }
 
 .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 1em;
 }
 
 .page-title {
-    margin: 0;
     font-weight: 400;
     font-size: 3em;
 }
@@ -81,4 +83,31 @@ body {
         cursor: pointer;
         background-color: #B4EFB4;
     }
+}
+
+.period {
+    margin: 0;
+    padding: 0;
+    font-size: 3.1em;
+    color: #B4EFB4;
+}
+
+// Mobile
+@media screen and (max-width: 900px) {
+    #app, .flash-card, .question-group {
+        width: 95vw;
+    }
+
+    .page-header {
+        width: 95vw;
+    }
+
+    .page-title {
+        font-size: 1.5em;
+    }
+
+    .question-group input {
+        width: 98%;
+    }
+    
 }
