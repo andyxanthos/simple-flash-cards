@@ -96,9 +96,11 @@ function renderCards() {
         
         flashCard.addEventListener('click', function() {
             if (!this.answerShown) {
+                this.classList.add('back-shown');
                 this.children[0].style.display = 'none';
                 this.children[1].style.display = 'block';
             } else if (this.answerShown) {
+                this.classList.remove('back-shown');
                 this.children[0].style.display = 'block';
                 this.children[1].style.display = 'none';
             }

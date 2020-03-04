@@ -3,7 +3,21 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Bitter', serif;
+    background-image: url('../img/repeated-square.png');
+    margin: 0;
+    padding: 0;
+}
+
+.page-header {
+    text-align: center;
+    padding: 1em;
+}
+
+.page-title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 3em;
 }
 
 #app {
@@ -11,11 +25,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 25vw;
+    margin: 0 auto;
 }
 
 .question-group {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     margin-top: 1em;
-    background-color: #EEE;
+    background-color: #EDEDED;
     padding: 1em;
     border-bottom: 1px solid #DDD;
     margin-bottom: 1em;
@@ -29,8 +46,39 @@ body {
 }
 
 .flash-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    background-color: #FFF;
+    font-weight: bold;
     margin-bottom: 1em;
     padding: 1em;
     border: 1px solid black;
     width: 500px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.back-shown {
+    background-color: #EDEDED;
+}
+
+.add-or-edit-btn, #add-question-btn, .create-btn {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    background: #FFF;
+    border: 2px solid black;
+    font-size: 1.2em;
+    padding: 1em;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    &:hover {
+        cursor: pointer;
+        background-color: #B4EFB4;
+    }
 }
